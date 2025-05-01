@@ -1,63 +1,71 @@
-# Web Uygulama Geliştirme Kursu Projesi
+# 🧑‍💻 MVC5 ile Admin Panelli Dinamik CV Sitesi
 
-**Web Uygulama Geliştirme Kursu Projesi**, ASP.NET MVC kullanarak web uygulamaları geliştirmeyi öğreten bir projedir. Bu proje, çeşitli özellikler ve işlevsellikler içerir.
-
----
-
-## 📌 Proje Özellikleri
-
-### 🖥️ **Proje Başlangıcı ve Yapılandırma**  
-Projeye başlarken temel yapı ve veritabanı tablosu oluşturulur. Bu bölümde, projenin ilk yapılandırma işlemleri, gerekli dizinlerin oluşturulması ve temel dosyaların entegrasyonu yapılmaktadır.  
-![Proje Yapılandırma](images/project-setup.png)  
-*Proje başlangıcı ve yapılandırma.*
+Bu proje, ASP.NET MVC5 mimarisi kullanılarak geliştirilmiş **dinamik bir CV web sitesidir**. Yönetici paneli aracılığıyla tüm içerikler (eğitimler, deneyimler, yetenekler, sosyal medya bağlantıları vb.) kolayca yönetilebilir.
 
 ---
 
-### 💾 **Veritabanı Yönetimi**  
-Veritabanı modeli oluşturulmuş ve kullanıcıların deneyimlerini, eğitimlerini, yeteneklerini ve sertifikalarını yönetebileceği sayfalar geliştirilmiştir. CRUD işlemleri (Create, Read, Update, Delete) gerçekleştirilerek veri yönetimi sağlanmıştır.  
-![Veritabanı Yönetimi](images/database-management.png)  
-*Veritabanı yönetimi ve veri işlemleri.*
+## 📌 Proje Özeti
+
+Proje iki ana kısımdan oluşur:
+
+- **Kullanıcı Arayüzü (CV Sitesi)**: Ziyaretçilere kişisel bilgiler, deneyimler, eğitim geçmişi gibi CV içerikleri gösterilir.
+- **Yönetici Paneli (Admin Panel)**: CRUD işlemleriyle tüm içerikler veritabanı üzerinden yönetilebilir.
 
 ---
 
-### 🧑‍💻 **Kullanıcı ve İçerik Yönetimi**  
-Bu özellik ile kullanıcıların deneyimlerini, eğitim bilgilerini, yeteneklerini ve hobilerini yönetebilecekleri sayfalar oluşturulmuştur. CRUD işlemleri sayesinde kullanıcılar verilerini görüntüleyebilir, ekleyebilir, düzenleyebilir ve silebilirler.  
-![Kullanıcı Yönetimi](images/user-management.png)  
-*Kullanıcı bilgileri ve içerik yönetimi.*
+## ⚙️ Kullanılan Teknolojiler
+
+- ASP.NET MVC5
+- Entity Framework (Db-First)
+- MS SQL Server
+- LINQ
+- HTML5 / CSS3 / JavaScript
+- Bootstrap (Responsive Tasarım)
 
 ---
 
-### 🔒 **Kimlik Doğrulama ve Güvenlik**  
-Kullanıcıların sisteme güvenli bir şekilde giriş yapabilmesi için kimlik doğrulama ve yetkilendirme işlemleri eklenmiştir. Giriş ve çıkış işlemleri, sistemin güvenliğini sağlamak amacıyla yapılmaktadır.  
-![Login Ekranı](images/login-screen.png)  
-*Giriş ekranı ve kimlik doğrulama.*
+## 🛠️ Özellikler
 
----
+### 🔐 Giriş Paneli
+- Giriş yapan kullanıcılar admin paneline erişebilir.
+- Giriş yapılmadan sadece CV ve giriş sayfalarına ulaşılabilir.
+![CV Ana Sayfa](images/cv-anasayfa.png)
+![CV Login](images/admin-login.png)
 
-### 🌐 **Yayınlama ve Hosting**  
-Projeyi yayına alma süreci, hosting ve domain ayarları ile birlikte ele alınmıştır. Ayrıca, siteyi yayına alırken yaşanabilecek hataların nasıl çözüleceği ve siteye son bakış işlemleri de kurs kapsamında öğretilmektedir.  
-![Yayınlama](images/hosting-deployment.png)  
-*Projeyi yayına alma ve hosting işlemleri.*
+### 👤 Hakkımda
+- Kişisel bilgiler güncellenebilir.
+![Hakkımda Panel](images/admin-hakkimda.png)
 
----
+### 🎓 Eğitimler
+- Eğitim geçmişi listelenebilir, güncellenebilir, silinebilir ve yeni kayıt eklenebilir.
+![Eğitim Panel](images/admin-egitim.png)
 
-### 🏠 **Ana Sayfa ve Genel Görünüm**  
-Ana sayfa, kullanıcıların projeye giriş yaptıktan sonra ilk olarak karşılaştıkları sayfadır. Bu sayfa, temel navigasyon öğeleri, kullanıcıyı tanıtan bilgiler, bağlantılar ve uygulamanın öne çıkan özelliklerine dair kısa açıklamalar sunar.  
-- **Kullanıcı Bilgileri**: Kullanıcı adı ve profil bilgileri ana sayfada yer alır.  
-- **Navigasyon**: Kullanıcıların diğer sayfalara kolayca geçiş yapabilmesi için sol menü ve üst navbar kullanılır.  
-- **Genel Görünüm**: Projenin genel arayüzü, kullanıcı dostu ve modern bir tasarımla oluşturulmuştur. Responsive özellik sayesinde, farklı cihazlarda da rahatlıkla kullanılabilir.  
+### 💼 Deneyimler
+- İş deneyimleri yönetilebilir.
+![Deneyim Panel](images/deneyim.png)
+![Deneyim Panel](images/admin-deneyim.png)
+![Deneyim Panel](images/admin-deneyim2.png)
 
-![Ana Sayfa Görünümü](images/homepage.png)  
-*Ana sayfa görünümü ve kullanıcı dostu arayüz.*
+### 🎯 Yetenekler
+- Yetenek listesi, yüzde bar ile birlikte gösterilir.
+- Yeni yetenek eklenebilir, güncellenebilir ve silinebilir.
+![Yetenek Panel](images/yetenek.png)
+![Yetenek Panel](images/admin-yetenek.png)
 
----
+### 📜 Sertifikalar
+- Sertifikalar eklenebilir, düzenlenebilir ve silinebilir.
 
-## 💻 Kullanılan Teknolojiler
+### 🎨 Hobiler
+- Hobiler kısmı admin paneli güncellenebilir.
 
-- **🖥️ ASP.NET MVC**: Projenin geliştirilmesinde kullanılan ana framework.
-- **🗄️ SQL Server**: Veritabanı yönetimi için kullanılan sistem.
-- **🎨 Admin LTE**: Admin paneli tasarımı için kullanılan açık kaynaklı tema.
-- **🔐 C#**: Uygulamanın iş mantığını geliştiren programlama dili.
-- **📦 Entity Framework**: ORM (Object-Relational Mapping) kullanılarak veritabanı işlemleri.
+### 🌐 Sosyal Medya
+- Sosyal medya hesapları aktif/pasif olarak yönetilir.
+- Yalnızca aktif olan hesaplar kullanıcı arayüzünde görünür.
 
----
+### 📬 İletişim Formu
+- Ziyaretçiler iletişim formu ile mesaj gönderebilir.
+- Gelen mesajlar admin panelinde görüntülenebilir.
+![İletişim Panel](images/iletisim.png)
+
+### 🔓 Çıkış
+- Kullanıcı çıkış yaptığında tekrar giriş yapmadan panele ulaşamaz.
